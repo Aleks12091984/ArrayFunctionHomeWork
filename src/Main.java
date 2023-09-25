@@ -55,10 +55,35 @@ public class Main {
         }
         return sum;
     }
+    static double Sum (double[] arr)
+    {
+        double sum = 0;
+        for(int i = 0; i < arr.length; i++)
+        {
+            sum += arr[i];
+        }
+        return sum;
+    }
+
+    static double Avg(int[] arr)
+    {
+        double avg = (double) Sum(arr) / arr.length;
+        return avg;
+    }
 
     static int MaxValueIn(int [] arr)
     {
         int maxArrayElement = arr[0];
+        for(int i = 0; i < arr.length; i++)
+        {
+            if(maxArrayElement < arr[i])
+                maxArrayElement = arr[i];
+        }
+        return maxArrayElement;
+    }
+    static double MaxValueIn(double [] arr)
+    {
+        double maxArrayElement = arr[0];
         for(int i = 0; i < arr.length; i++)
         {
             if(maxArrayElement < arr[i])
