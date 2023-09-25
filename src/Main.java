@@ -8,6 +8,7 @@ public class Main {
         System.out.print("Введите размер массива: ");
         int n = kb.nextInt();
         int[] arr = new int[n];
+        char[] arrChar = new char[n];
 
         FillRand(arr);
         Print(arr);
@@ -15,7 +16,7 @@ public class Main {
         Print(arr);
 
         System.out.println("Сумма элементов массива: " + Sum(arr));
-        //System.out.println("Среднее арифметическое: " + Avg(arr));
+        System.out.println("Среднее арифметическое: " + Avg(arr));
         System.out.println("Максимум: " + MaxValueIn(arr) + "; " + "Минимум: " + MinValueIn(arr));
     }
     static void FillRand(int[] arr)
